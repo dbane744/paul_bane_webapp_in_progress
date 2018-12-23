@@ -14,8 +14,8 @@ if($('body').is('.Visit-Us-Page')){
         accessToken: 'pk.eyJ1IjoiZGFuaWVsYmFuZSIsImEiOiJjam5zMnFvMXAwZGlwM3JwajdhODBrOG91In0.XN9QaS0Wwb5XLHRY67Axwg'
     })
 
-    var map = L.map('mapid', { layers: [satellite, streets] }).setView([53.9588499, -1.081886700000041], 15);
-
+    var map = L.map('mapid', { layers: [satellite, streets] }).setView([53.959077, -1.081444], 15);
+ 
     var baseMaps = {
         "Satellite": satellite,
         "Streets": streets
@@ -23,7 +23,7 @@ if($('body').is('.Visit-Us-Page')){
 
     L.control.layers(baseMaps).addTo(map);
 
-    var marker = L.marker([53.9588499, -1.081886700000041]).addTo(map);
+    var marker = L.marker([53.959077, -1.081444]).addTo(map);
     marker.bindPopup("<b>York market stall</b><br>Find Paul here!").openPopup();
 }
 
